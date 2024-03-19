@@ -3,14 +3,46 @@
 <head>
     <title>Coffee Shop</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <style>
+        .background-image {
+            background-image: url(images/cafe.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+    }
+    </style>
 </head>
 <body>
+    <header>
         <h1>Welcome To Our Coffee Shop</h1>
-    <p>
-        <a href="pages/About.html">About Us</a>
-        <a href="pages/Delivery.html">Order Now</a>
+    </header>
+    <nav>
+        <a href=#>About Us</a>
+        <a href=#>Order Now</a>
     
-    </p>
+    </nav>
+    <div class="background-image"></div>
+    <div class="container">
+        <h2>Make a Reservation</h2>
+
+
+   
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" required><br><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" name="phone" required><br><br>
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="time">Time:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
    
             <h2>Did you know</h2>
             <p>We serve the best coffee in town!!</p>
